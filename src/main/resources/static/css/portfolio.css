@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.img-fondo {
+  background-image: url(/img/background.jpg);
+}
+
+.ingreso {
+  width: 170px;
+  padding: 0.4em;
+}
+
+.usuario {
+  text-align: center;
+  font-size: 13px;
+  width: 12em;
+}
+
+.face,
+.insta,
+.lk {
+  padding: 0.5em;
+  font-size: 1.3em;
+}
+
+.lk {
+  padding-right: 1em;
+}
+
+.text-ingreso {
+  text-align: center;
+  color: #fff;
+  margin: 0.5em;
+}
+
+.boton {
+  padding: 0.5em 2.8em;
+}
+
+.clr-btn {
+  background-color: #7a7e80;
+  color: #fff;
+}
+
+.color-redes {
+  color: #7a7e80;
+}
+
+.dropdown-menu {
+  background-color: #383636;
+  width: 170px;
+}
+
+.dropdown-toggle {
+  background-color: #7a7e80;
+  color: #fff;
+  width: 170px;
+}
+
+
+.error {
+  color: rgb(255, 0, 0);
+}
