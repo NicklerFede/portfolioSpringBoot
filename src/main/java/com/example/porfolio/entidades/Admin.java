@@ -14,31 +14,33 @@ public class Admin {
     private String id;
     private String acercaDeMi;
     private Boolean alta;
-    
+
     public Admin() {
     }
 
     public String getId() {
-	return id;
+        return id;
     }
 
     public void setId(String id) {
-	this.id = id;
+        this.id = id;
     }
 
-    public String getacercaDeMi() {
-	return acercaDeMi;
+    public String getAcercaDeMi() {
+        return acercaDeMi;
     }
 
-    public void setacercaDeMi(String acercaDeMi) {
-	this.acercaDeMi = acercaDeMi;
+    public void setAcercaDeMi(String acercaDeMi) {
+        this.acercaDeMi = acercaDeMi;
     }
 
     public Boolean getAlta() {
-	return alta;
+        return alta;
     }
 
     public void setAlta(Boolean alta) {
-	this.alta = alta;
+        this.alta = alta;
     }
+
+    
 }

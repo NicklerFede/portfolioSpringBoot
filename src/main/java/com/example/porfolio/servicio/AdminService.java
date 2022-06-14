@@ -14,8 +14,8 @@ public class AdminService {
     private AdminRepository adminRepository;
 
     public Admin guardarAcercaDeMi(Admin admin) throws Exception {
-	if (admin.getacercaDeMi().isEmpty()) {
-	    throw new Exception("El nombre del autor no puede estar vacio");
+	if (admin.getAcercaDeMi().isEmpty()) {
+	    throw new Exception("Este campo no puede estar vacio");
 	}
 	return adminRepository.save(admin);
     }
@@ -24,7 +24,7 @@ public class AdminService {
 	if (acercaDeMi.isEmpty()) {
 	    throw new Exception("El nuevo nombre del autor no puede estar vacio");
 	}
-	admin.setacercaDeMi(acercaDeMi);
+	admin.setAcercaDeMi(acercaDeMi);
 	return adminRepository.save(admin);
     }
 
@@ -33,7 +33,7 @@ public class AdminService {
 	return adminRepository.save(admin);
     }
 
-    public List<Admin> listarAutoresl() {
+    public List<Admin> listarAcercaDeMi() {
 	return adminRepository.findAll();
     }
 
@@ -56,17 +56,6 @@ public class AdminService {
 	}
     }
 
-    public void altaAutor(String id) throws Error {
-	Optional<Admin> respuesta = adminRepository.findById(id);
-	if (respuesta.isPresent()) {
-	    Admin admin = respuesta.get();
-	    admin.setAlta(true);
-	    adminRepository.save(admin);
-	} else {
-	    throw new Error("No se encontró un autor con ese nombre");
-	}
-    }
-
     public void eliminarAcercaDeMi(String id) throws Error {
 	Admin admin = adminRepository.getById(id);
 	if (admin == null) {
@@ -75,4 +64,5 @@ public class AdminService {
 	    adminRepository.delete(admin);
 	}
     }
+
  }

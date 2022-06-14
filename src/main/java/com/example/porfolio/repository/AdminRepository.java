@@ -18,4 +18,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AdminRepository extends JpaRepository<Admin, String>{
    
+     @Query("select a from Admin a where a.acercaDeMi = :acercaDeMi")
+    public Admin buscarAcercaDeMi(@Param("acercaDeMi") String acercaDeMi);
+
 }
